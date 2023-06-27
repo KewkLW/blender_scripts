@@ -1,5 +1,5 @@
 # 3D Text Creator in Blender
-
+add_text_from_file.py
 This script uses the Python API for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset, to create 3D text objects from a text file. It uses a specified font to render the text in 3D and positions it at the origin of the scene.
 
 ## Requirements
