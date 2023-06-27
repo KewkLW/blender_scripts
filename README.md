@@ -1,3 +1,42 @@
+# Blender Multi-Font Text Creator and Renderer - create_letter_dataset.py
+
+This script uses the Python API for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset, to create 3D text objects for each line of a given text file and each font in a given directory, and then render the scene from the perspective of each camera in the scene.
+
+## Requirements
+
+- Blender 2.9x or above
+- Python 3.7 or above
+
+## Usage
+
+1. Save the script in the same directory where your Blender project file is located.
+
+2. Open Blender and go to the scripting workspace. Click on 'Open' and navigate to the directory where you saved the script. Select the script and click 'Open Text Block'.
+
+3. Modify the `font_directory` and `filename` variables in the `main` function to match your font directory and text file paths.
+
+4. Run the script in Blender by clicking the 'Run Script' button or by pressing Alt + P.
+
+## Code Overview
+
+The script contains several key functions which are explained below:
+
+- `load_fonts(font_directory)`: This function loads all the font files from the given directory and returns a list of the loaded fonts.
+
+- `create_text(text, font)`: This function creates a 3D text object in Blender using the given text and font, and then positions it at the origin of the scene.
+
+- `render_all_cameras(context, font_name)`: This function iterates over all objects in the scene, finds the cameras, sets each camera as the active camera in turn, and then renders the scene to a file. The rendered image files are saved in a directory named "/tmp/renders/{font_name}/" within the directory where the Blender project file is located. The name of each file is the same as the name of the camera used to render it.
+
+- `main()`: This is the main function of the script. It loads the fonts from the specified directory, reads the text from the specified file, creates a 3D text object for each line of text and each font, and then renders the scene from the perspective of each camera.
+
+## Note
+
+Ensure that the Blender application is able to access the directory where you plan to save the rendered images. Also, make sure that there is a "/tmp/renders/{font_name}/" directory in the same location as your Blender project file, as this is where the script will save the rendered images.
+<br>
+<br>
+
+
+
 # 3D Text Creator in Blender - add_text_from_file.py
 
 This script uses the Python API for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset, to create 3D text objects from a text file. It uses a specified font to render the text in 3D and positions it at the origin of the scene.
@@ -32,7 +71,8 @@ The script has the following key functions:
 ## Note
 
 Ensure that the Blender application is able to access the file paths specified in the script.
-
+<br>
+<br>
 
 # Blender Text Renaming Tool - rename_font.py
 
@@ -63,7 +103,8 @@ The script contains a single function, `rename_text()`, which gets executed when
 ## Note
 
 Ensure that the text objects you want to rename are selected before running the script.
-
+<br>
+<br>
 # Blender Multi-Camera Renderer - render every camera.py
 
 This script uses the Python API for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset, to render the scene from the perspective of each camera in the scene.
