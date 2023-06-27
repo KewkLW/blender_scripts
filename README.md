@@ -1,5 +1,5 @@
-# 3D Text Creator in Blender
-add_text_from_file.py
+# 3D Text Creator in Blender - add_text_from_file.py
+
 This script uses the Python API for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset, to create 3D text objects from a text file. It uses a specified font to render the text in 3D and positions it at the origin of the scene.
 
 ## Requirements
@@ -34,7 +34,8 @@ The script has the following key functions:
 Ensure that the Blender application is able to access the file paths specified in the script.
 
 
-# Blender Text Renaming Tool
+# Blender Text Renaming Tool - rename_font.py
+
 
 This script is a utility tool for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset. The script uses the Python API for Blender to rename selected text objects in the scene.
 
@@ -63,7 +64,7 @@ The script contains a single function, `rename_text()`, which gets executed when
 
 Ensure that the text objects you want to rename are selected before running the script.
 
-# Blender Multi-Camera Renderer
+# Blender Multi-Camera Renderer - render every camera.py
 
 This script uses the Python API for [Blender](https://www.blender.org/), a free and open-source 3D computer graphics software toolset, to render the scene from the perspective of each camera in the scene.
 
